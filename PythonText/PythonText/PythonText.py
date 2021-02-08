@@ -11,17 +11,15 @@ average_entropy = 0
 print(uniqchar)
 #Вывод Символа и количества его повторений
 for i in uniqchar:
-    #frequency = quantity[i] / int(numbers_of_char)
-    #entropy = frequency * log2(1 / frequency)
+    frequency = quantity[i] / int(numbers_of_char)
+    entropy = frequency * log2(1 / frequency)
     #print("--------------------------------------------------------")
     #print(" Частота для символа " + "'" + i + "'" + " = " + str(frequency))
     #print("--------------------------------------------------------")
     #print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     #print(" Entropy for " + "'" + i + "'" + " = " + str(entropy))
    # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    #average_entropy +=entropy 
-   # print("\n")
-   print (quantity[i])
+    average_entropy +=entropy      
 #Количество уникальных символов в тексте
 print("Number of uniq char",len(set(words)))
 file_stats = os.stat("C:/Users/nik-v/Desktop/3.txt")
